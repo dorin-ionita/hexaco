@@ -8,7 +8,7 @@
 	<div id="header">
 		<?php include "antent.php";?>
 	</div>
-	<div id="body">
+<!-- 	<div id="body">
 		<h3>about us</h3>
 		<b>We Have Free Templates for Everyone</b>
 		<p>
@@ -26,7 +26,7 @@
 		<p>
 			Design version 13<br>Code version 6<br>Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/hairstylesalon/">Zizurz Website Template</a>. Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>. Please feel free to remove some or all the text and links of this page and replace it with your own About content.
 		</p>
-	</div>
+	</div> -->
 	<?php include "footer.php";?>
 </body>
 </html>

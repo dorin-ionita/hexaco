@@ -9,7 +9,7 @@
 		<?php include "antent.php";?>
 	</div>
 	<div id="body">
-		<h3>hairstyles</h3>
+		<!-- <h3>hairstyles</h3>
 		<ul>
 			<li>
 				<a href="#"><img src="images/hairstyle1.jpg" alt=""></a>
@@ -60,7 +60,7 @@
 				<a href="#"><img src="images/hairstyle16.jpg" alt=""></a>
 			</li>
 		</ul>
-		<a href="#" class="more">show more</a>
+		<a href="#" class="more">show more</a> -->
 	</div>
 	<?php include "footer.php";?>
 </body>

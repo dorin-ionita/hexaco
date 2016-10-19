@@ -9,7 +9,7 @@
 		<?php include "antent.php";?>
 	</div>
 	<div id="body">
-		<div class="blog">
+		<!-- <div class="blog">
 			<div class="content">
 				<h3>news</h3>
 				<p>
@@ -45,7 +45,7 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<?php include "footer.php";?>
 </body>
