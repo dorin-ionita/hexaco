@@ -70,5 +70,45 @@
 		print "The answer is".$n."\n";
 	}
 
+	# TODO:
+
+	#Honesty-Humility
+	$sincerity = $answer[5] + 6 - $answer[29] + $answer[53];
+	$fairness = 6 - $answer[11] + $answer[35] + 6 - $answer[59];
+	$greed_avoidance = $answer[17] + 6 - $answer[41];
+	$modesty = 6 - $answer[23] + 6 - $answer[47];
+
+	#Emotionality
+	$fearfulness = $answer[4] + $answer[28] + 6 - $answer[52];
+	$anxiety = $answer[10] + 6 - $answer[34];
+	$dependence = $answer[16] + 6 - $answer[40];
+	$sentimentality = $answer[22] + $answer[46] + 6 - $answer[58];
+
+	#Extraversion
+	$social_self_esteem = $answer[3] + 6 - $answer[27] + 6 - $answer[51];
+	$social_boldmess = 6 - $answer[9] + $answer[33] + $answer[57];
+	$sociability = $answer[15] + $answer[39];
+	$liveliness = $answer[21] + 6 - $answer[45];
+
+	#Agreeableness
+	$forgiveness = $answer[2] + $answer[26];
+	$gentleness = 6 - $answer[8] + $answer[32] + $answer[50];
+	$flexibility = 6 - $answer[14] + $answer[38] + 6 - $answer[58];
+	$patience = 6 - $answer[20] + $answer[44];
+
+	#Conscientiousness
+	$organization = $answer[1] + 6 - $answer[25];
+	$diligence = $answer[7] + 6 - $answer[31];
+	$perfectionism = 6 - $answer[13] + $answer[37] + $answer[49];
+	$prudence = 6 - $answer[19] + 6 - $answer[43] + 6 - $answer[55];
+
+	#Openness to Experience
+
+	$aesthetic_appreciation = 6 - $answer[0] + $answer[24];
+	$inquisitiveness = $answer[7] + 6 - $answer[30];
+	$creativity = $answer[12] + $answer[36] + 6 - $answer[48];
+	$unconventionality = 6 - $answer[18] + $answer[42] + 6 - $answer[54];
+
+
 	print "Name is ".$name;
 ?>
