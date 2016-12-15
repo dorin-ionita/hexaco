@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td> Imi fortez limitele atunci cand incerc sa ating un scop </td>
-			1
+			<td>
 			 	<input type="radio" name="intrebare8" value="1"> 1 &nbsp;
 			 	<input type="radio" name="intrebare8" value="2"> 2 &nbsp;
 			 	<input type="radio" name="intrebare8" value="3"> 3 &nbsp;
@@ -625,7 +625,7 @@
 			 	<input type="radio" name="intrebare60" value="5"> 5 &nbsp;
 			</td>
 		</tr>
-		<table>
+		</table>
 
 
 	<input type="submit">

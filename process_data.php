@@ -66,10 +66,6 @@
 					$_POST['intrebare59'],
 					$_POST['intrebare60']
 					);
-	foreach ( $answer as $key => $n ){
-		print "The answer is".$n."\n";
-	}
-
 	# TODO:
 
 	#Honesty-Humility
@@ -109,6 +105,45 @@
 	$creativity = $answer[12] + $answer[36] + 6 - $answer[48];
 	$unconventionality = 6 - $answer[18] + $answer[42] + 6 - $answer[54];
 
+	# Conexiunea la baza de date
 
-	print "Name is ".$name;
+	$servername = "mysql.hostinger.ro";
+	$username = "u347233397_dorin";
+	$password = "Ionita1@";
+	$dbname = "u347233397_hstry";
+	$conn = mysqli_connect($servername,$username,$password,$dbname);
+	if (!$conn){
+		die("Connection failed: ".mysqli_connect_error());
+	} #connexion works
+
+	# Inserarea in baza de date
+
+	$sql = "INSERT INTO
+			hstry (name, age, gender, sincerity, fairness, 
+			greed_avoidance, modesty, fearfulness, anxiety,
+			dependence, sentimentality, social_self_esteem,
+			social_boldmess, sociability, liveliness, forgiveness,
+			gentleness, flexibility, patience, organization, diligence,
+			perfectionism, prudence, aesthetic_appreciation, 
+			inquisitiveness, creativity, unconventionality)
+			VALUES
+		    ('$name','$age','$gender','$sincerity','$fairness',
+		      '$greed_avoidance','$modesty','$fearfulness','$anxiety',
+		      '$dependence','$sentimentality','$social_self_esteem',
+		      '$social_boldmess','$sociability','$liveliness','$forgiveness',
+		      '$gentleness','$flexibility','$patience','$organization','$diligence',
+		      '$perfectionism','$prudence','$aesthetic_appreciation',
+		      '$inquisitiveness','$creativity','$unconventionality')";
+    print $sql;
+	if (mysqli_query($conn, $sql)){
+		echo "Succes";
+	} else {
+		echo "Fail";
+	}
+
+	mysqli_close($conn);
+
+	#echo '<script type="text/javascript">
+	#		window.location = "rezultate.php"
+	#	  </script>';
 ?>
